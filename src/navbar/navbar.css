@@ -1,0 +1,56 @@
+.nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.topleft, .topright{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topcenter{
+    flex: 7; 
+}
+
+.topImage{
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.topIcon{
+    font-size: 30px;
+    margin-right: 10px;
+    color:black;
+    cursor: pointer;
+}
+
+.toplist{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toplistitem{
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.topSearchIcon{
+    font-size: 20px;
+    color: grey; 
+    cursor: pointer;
+    margin-left: 20px;
+}
