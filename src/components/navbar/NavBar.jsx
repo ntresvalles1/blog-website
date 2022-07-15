@@ -1,4 +1,4 @@
-import "./navbar.css"
+import "./navbar.css";
 
 export default function navbar() {
   return (
@@ -21,8 +21,9 @@ export default function navbar() {
         <div className="topright">
             <img className="topImage"
                 src="https://m.media-amazon.com/images/I/31Cd9UQp6eL._SX355_.jpg"
+                alt=" "
             />
-            <i class="topSearchIcon fa-solid fa-magnifying-glass"></i>
+            <i class="topIcon fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
   )

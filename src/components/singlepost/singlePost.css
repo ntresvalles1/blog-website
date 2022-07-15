@@ -1,0 +1,53 @@
+.singlePost{
+    flex: 9;
+}
+
+.singlePostwrap{
+    padding: 30px; 
+    padding-right: 0;
+}
+
+.singlePostImage{
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.singlePostTitle{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+.singlePostedit{
+    float: right;
+    font-size: 15px;
+}
+
+.singlePostIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.singlePostIcon:first-child{
+    color: purple
+}
+.singlePostIcon:last-child{
+    color: pink
+}
+.singlePostInf{
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.singlePostDescription{
+    font-size: 15px;
+    line-height: 25px;
+}
+.singlePostDescription::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
