@@ -1,0 +1,30 @@
+.header{
+    margin-top: 50px;
+}
+
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Varela', sans-serif;
+    color: black;
+}
+
+.headerTitleSmall{
+    /* position: absolute; */
+    top: 18%;
+    font-size: 20px;
+}
+
+.headerTitleLar{
+    /* position: absolute; */
+    top: 20%;
+    font-size: 100px;
+}
+
+.headerImage{
+    height: 450px;
+    width: 100%;
+    margin-top: 80px;
+    object-fit: cover;
+}
