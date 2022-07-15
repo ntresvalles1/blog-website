@@ -1,3 +1,4 @@
+import React from "react";
 import "./register.css"
 
 export default function Register() {
@@ -31,7 +32,7 @@ export default function Register() {
         <button className="registerButton">Create Account</button>
 
     </form>
-        <button className="regLoginrButton">Sign in</button>
+        <button className="regLoginButton">Sign in</button>
     </div>
   )
 }

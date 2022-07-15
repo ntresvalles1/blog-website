@@ -1,3 +1,4 @@
+import React from "react";
 import "./setting.css"
 import SideBar from "../../components/sidebar/Sidebar";
 

@@ -6,18 +6,23 @@ import Writepost from "./pages/writepost/Writepost";
 import Setting from "./pages/settings/Setting";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-import{ BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import{ BrowserRouter as Router, Routes, Route, Link, Navigate} from "react-router-dom";
 
 
 function App() {
+  const user = false;
   return (
     <Router>
       <NavBar/> 
-      <Switch>
-        <Route path="/home">
-          <Home/>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/signup"  element={user ? <Home /> : <Register />}/>
+        <Route path="/signin" element={user ? <Home /> : <Login />} />
+        
+        <Route path="/write" element={user ? <Writepost /> : <Register />} />
+        <Route path="/settings" element={user ? <Setting /> : <Register />} />
+        <Route path="/post/:postId" element={<Blogpost />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import "./writepost.css"
 
 export default function Writepost() {
