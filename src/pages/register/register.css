@@ -1,0 +1,49 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://img.freepik.com/free-vector/flower-desktop-wallpaper-background-vector_53876-144449.jpg?w=2000");
+    background-size: cover;
+}
+.registerTitle{
+    font-size: 50px;
+}
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.registerForm > label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.registerInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+
+}
+.registerButton{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+.regLoginrButton{
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

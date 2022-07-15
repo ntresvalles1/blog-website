@@ -1,0 +1,74 @@
+.setting{
+    display: flex;
+}
+.settingWrap{
+    flex: 9;
+    padding: 20px;
+}
+.settingTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.settingUpdateTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: lightsalmon;
+}
+.settingDeleteTitle{
+    color: purple;
+    font-size: 12px;
+    cursor: pointer;
+}
+.settingForm{
+    display: flex;
+    flex-direction: column;
+}
+.settingProfilePic{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.settingProfilePic > img{
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.settingProfileIcon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    background-color: rgb(246, 182, 99);
+    border-radius: 50%;
+    align-items: center;
+    object-fit: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.settingForm > label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.settingForm > input{
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+.settingSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(182, 221, 208);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
