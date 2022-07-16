@@ -6,14 +6,17 @@
     align-items: center;
     background: url("https://i.pinimg.com/originals/f0/cb/1a/f0cb1ab5f276758d4c8db6a1be6529e7.jpg");
     background-size: cover;
+    font-family: 'Varela', sans-serif;
 }
 .loginTitle{
     font-size: 50px;
+    font-family: 'Varela', sans-serif;
 }
 .loginForm{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    font-family: 'Varela', sans-serif;
 }
 .loginForm > label{
     margin-top: 10px;
@@ -25,7 +28,7 @@
     padding: 10px;
     background-color: white;
     border: none;
-
+    font-family: 'Varela', sans-serif;
 }
 .loginButton{
     padding: 10px;
@@ -34,6 +37,7 @@
     cursor: pointer;
     border: none;
     color: black;
+    font-family: 'Varela', sans-serif;
 }
 .registerButton{
     padding: 10px;
@@ -45,5 +49,6 @@
     border: none;
     color: black;
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 10px;  
+    font-family: 'Varela', sans-serif;
 }

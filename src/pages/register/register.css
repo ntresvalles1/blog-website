@@ -6,14 +6,17 @@
     align-items: center;
     background: url("https://img.freepik.com/free-vector/flower-desktop-wallpaper-background-vector_53876-144449.jpg?w=2000");
     background-size: cover;
+    font-family: 'Varela', sans-serif;
 }
 .registerTitle{
     font-size: 50px;
+    font-family: 'Varela', sans-serif;
 }
 .registerForm{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    font-family: 'Varela', sans-serif;
 }
 .registerForm > label{
     margin-top: 10px;
@@ -25,22 +28,27 @@
     padding: 10px;
     background-color: white;
     border: none;
-
+    font-family: 'Varela', sans-serif;
 }
-.registerButton{
+.regButton{
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
     color: black;
+    font-family: 'Varela', sans-serif;
 }
 .regLoginButton{
     padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
     margin-top: 20px;
     cursor: pointer;
     border: none;
     color: black;
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 10px;  
+    font-family: 'Varela', sans-serif;
 }
