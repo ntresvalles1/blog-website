@@ -1,6 +1,6 @@
 import React from "react";
-import "src/components/posts/posts.css";
-import Post from "src/components/post/Post";
+import "./posts.css";
+import Post from "../post/Post";
 
 export default function Posts() {
   return (

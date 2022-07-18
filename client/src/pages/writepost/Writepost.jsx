@@ -1,5 +1,5 @@
 import React from "react";
-import "src/pages/writepost/writepost.css"
+import "./writepost.css"
 
 export default function Writepost() {
   return (

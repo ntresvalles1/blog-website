@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "src/pages/register/register.css"
+import "./register.css"
 
 export default function Register() {
   return (

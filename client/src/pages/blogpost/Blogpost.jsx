@@ -1,5 +1,5 @@
 import React from "react";
-import "src/pages/blogpost/blogpost.css";
+import "./blogpost.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import SinglePost from "../../components/singlepost/SinglePost";
 
