@@ -6,16 +6,18 @@ import { Context } from "../../context/Context";
 import axios from "axios";
 
 export default function Setting() {
-    const {user} = useContext(Context);
+    const {user , dispatch} = useContext(Context);
     const [file, setFile] = useState(null);
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [success, setSuccess] = useState(false);
+    const PF = "http://localhost:4000/images/";
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        dispatch({type: "UPDATE_START"})
         const updatedUser = {
             userId: user._id,
             username, 
@@ -34,9 +36,11 @@ export default function Setting() {
             }catch(err){}
         }
         try{
-           await axios.put("/users/" + user._id, updatedUser);
+           const res = await axios.put("/users/" + user._id, updatedUser);
            setSuccess(true);
+           dispatch({type: "UPDATE_SUCCESS", payload:res.data})
         }catch(err){
+            dispatch({type: "UPDATE_FAILURE"})
         }
     };
 
@@ -53,7 +57,7 @@ export default function Setting() {
                 <label>Profile Picture</label>
                 <div className="settingProfilePic">
                     <img 
-                        src={user.profilePicture} 
+                        src={file ? URL.createObjectURL(file) : PF + user.profilePicture} 
                         alt="" 
                     />
                     <label htmlFor="fileInput">
