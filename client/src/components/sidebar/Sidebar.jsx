@@ -1,7 +1,21 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
+
 
 export default function Sidebar() {
+    const [cat,setCategory] = useState([]);
+    
+    useEffect(()=> {
+        const getCategory = async () =>
+        {
+            const res = await axios.get("/category")
+            setCategory(res.data)
+        }
+        getCategory();
+    },[])
+
   return (
     <div className="sidebar">
         <div className="sidebarItem">
@@ -20,10 +34,15 @@ export default function Sidebar() {
         <div className="sidebarItem"> 
             <span className="sidebarTitle">CATEGORIES</span>
             <ul className="sidebarList">
-                <li className="sidelistItem">Trips</li>
+                {cat.map((c) => (
+                    <Link to={`/?cat=${c.name}`} style={{textDecoration: "none", color:"inherit"}}>
+                        <li className="sidelistItem">{c.name}</li>
+                    </Link> 
+                ))}
+                {/* <li className="sidelistItem">Trips</li>
                 <li className="sidelistItem">Favorites</li>
                 <li className="sidelistItem">Life</li>
-                <li className="sidelistItem">Music</li>
+                <li className="sidelistItem">Music</li> */}
             </ul>
         </div>
        
@@ -31,9 +50,9 @@ export default function Sidebar() {
             <span className="sidebarTitle">FOLLOW US</span>
             <div className="sidebarSocial">
                 <i className="sideIcon fa-brands fa-instagram"></i>
-                <i class="sideIcon fa-brands fa-facebook"></i>         
-                <i class="sideIcon fa-brands fa-twitter"></i>
-                <i class="sideIcon fa-brands fa-pinterest"></i>
+                <i className="sideIcon fa-brands fa-facebook"></i>         
+                <i className="sideIcon fa-brands fa-twitter"></i>
+                <i className="sideIcon fa-brands fa-pinterest"></i>
             </div>
         </div>
 

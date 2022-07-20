@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navbar.css";
 import{ BrowserRouter as Router, Routes, Route, Link, Navigate} from "react-router-dom";
+import { Context } from "../../context/Context";
 
-export default function navbar() {
-    const user = false;
-  return (
+export default function Navbar() {
+    const {user, dispatch} = useContext(Context);
+
+    const handleLogout = () => {
+        dispatch({type: "SIGNOUT"});
+    };
+
+    return (
     <div className='nav'>
         <div className="topleft">
             <i className="topIcon fa-brands fa-instagram"></i>
-            <i class="topIcon fa-brands fa-facebook"></i>         
-            <i class="topIcon fa-brands fa-twitter"></i>
-            <i class="topIcon fa-brands fa-pinterest"></i>
+            <i className="topIcon fa-brands fa-facebook"></i>         
+            <i className="topIcon fa-brands fa-twitter"></i>
+            <i className="topIcon fa-brands fa-pinterest"></i>
         </div>
         <div className="topcenter">
             <ul className="toplist">
@@ -26,18 +32,21 @@ export default function navbar() {
                 <li className="toplistitem">
                     <Link to="/Writepost" style={{textDecoration: "none", color:"inherit"}}>CONTACT</Link>
                 </li>
-                <li className="toplistitem">
-                   {user && "LOG-OUT"}
+                <li className="toplistitem" onClick={handleLogout}>
+                    {user && "LOG-OUT"}
                 </li>
             </ul>
         </div>
         <div className="topright">
+            
             {
                 user ? (
-                    <img className="topImage"
-                    src="https://m.media-amazon.com/images/I/31Cd9UQp6eL._SX355_.jpg"
-                    alt=" "
-                />
+                    <Link to="/settings">
+                        <img className="topImage"
+                        src={user.profilePicture}
+                        alt=" "
+                        />
+                </Link>
                 ) : (
                     <ul className="toplist">
                         <li className="toplistitem">
@@ -55,7 +64,7 @@ export default function navbar() {
                 )
             }
             
-            <i class="topIcon fa-solid fa-magnifying-glass"></i>
+            <i className="topIcon fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
   )

@@ -1,31 +1,32 @@
 import React from "react";
 import "./post.css";
+import{Link} from "react-router-dom";
 
-export default function Post() {
+
+export default function Post({post}) {
+  const PF = "http://localhost:4000/images/"; //makes images folder public (so images show up)
   return (
     <div className="post">
+      {post.image && 
         <img
             className="postImage"
-            src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"
+            src={PF + post.image}
             alt=" "
-        />
+        /> } 
 
         <div className="postInf">
             <div className="postCategory">
-                <span className="postCategory">Music</span>
-                <span className="postCategory">Life</span>
+              {post.category.map((c) => (
+                <span className="postCategory">{c.name}</span>
+              ))}
             </div>
-            <span className="postTitle">
-              Lorem ipsum, dolor sit amet 
-            </span>
+            <Link to={`/post/${post._id}`} style={{textDecoration: "none", color:"inherit"}}>
+              <span className="postTitle">{post.title} </span>
+            </Link>
             <hr/>
-            <span className="postDate">1 hour ago</span>
+            <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
         </div>
-        <p className="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Dicta, nostrum quam? Harum ipsam cumque distinctio atque suscipit 
-          necessitatibus ullam nam laudantium autem esse deleniti tenetur, repudiandae officia 
-          eveniet minus consectetur.
-        </p>
+        <p className="postDescription">{post.description}</p> 
     </div>
   )
-}
+} // takes information from db and renders it on page
