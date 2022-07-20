@@ -14,10 +14,18 @@ export default function Navbar() {
     return (
     <div className='nav'>
         <div className="topleft">
-            <i className="topIcon fa-brands fa-instagram"></i>
-            <i className="topIcon fa-brands fa-facebook"></i>         
-            <i className="topIcon fa-brands fa-twitter"></i>
-            <i className="topIcon fa-brands fa-pinterest"></i>
+            <a href="https://www.instagram.com/sdsccsmith/">
+                <i className="topIcon fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/sdscc.smith">
+                <i className="topIcon fa-brands fa-facebook"></i>  
+            </a>       
+            <a href="https://app.slack.com/client/T011W6JNT3J">
+                <i className="topIcon fa-brands fa-slack"></i>
+            </a>
+            <a href="https://dashboard.mailerlite.com/forms/67682/57194423704881009/share">
+                <i className="topIcon fa-solid fa-envelope"></i>
+            </a>
         </div>
         <div className="topcenter">
             <ul className="toplist">
@@ -25,13 +33,13 @@ export default function Navbar() {
                    <Link to="/" style={{textDecoration: "none", color:"inherit"}}>HOME</Link>
                 </li>
                 <li className="toplistitem">
-                    <Link to="/Writepost" style={{textDecoration: "none", color:"inherit"}}>ABOUT</Link>
+                    <Link to="/About" style={{textDecoration: "none", color:"inherit"}}>ABOUT</Link>
                 </li>
                 <li className="toplistitem">
                     <Link to="/Writepost" style={{textDecoration: "none", color:"inherit"}}>WRITE</Link>
                 </li>
                 <li className="toplistitem">
-                    <Link to="/Writepost" style={{textDecoration: "none", color:"inherit"}}>CONTACT</Link>
+                    <Link to="/Contact" style={{textDecoration: "none", color:"inherit"}}>CONTACT</Link>
                 </li>
                 <li className="toplistitem" onClick={handleLogout}>
                     {user && "LOG-OUT"}

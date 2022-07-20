@@ -1,0 +1,35 @@
+.about{
+    /* display: flex;   */
+    font-family: 'Raleway', sans-serif;
+    padding-top: 50px;
+    justify-content: center;
+    /* height: calc(100vh - 50px);
+    background: url("https://cdn.wallpapersafari.com/36/5/iXTctJ.jpg");
+    background-size: cover; */
+}
+.aboutPhoto{
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    width: 45vw;
+    height: 500px;
+}
+.aboutInfo{
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 50px;
+    margin-right: 100px;
+}
+.aboutTitle{
+    padding-top: 10px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}

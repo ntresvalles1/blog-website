@@ -19,7 +19,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
         <div className="sidebarItem">
-            <span className="sidebarTitle">ABOUT ME</span>
+            <span className="sidebarTitle">SPOTLIGHT</span>
             <img 
                 //className="sideBarImage" 
                 src="https://image.shutterstock.com/image-illustration/cute-little-blue-bird-tweet-260nw-107219297.jpg"

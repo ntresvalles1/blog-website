@@ -1,0 +1,41 @@
+.contactPage{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://cdn.wallpapersafari.com/36/5/iXTctJ.jpg");
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+.contactTitle{
+    font-size: 50px;
+    font-family: 'Varela', sans-serif;
+}
+.contactForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Varela', sans-serif;
+}
+.contactForm > label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.contactInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    font-family: 'Varela', sans-serif;
+}
+.contactButton{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-family: 'Varela', sans-serif;
+}
