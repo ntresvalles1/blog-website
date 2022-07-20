@@ -3,9 +3,6 @@
     font-family: 'Raleway', sans-serif;
     padding-top: 50px;
     justify-content: center;
-    /* height: calc(100vh - 50px);
-    background: url("https://cdn.wallpapersafari.com/36/5/iXTctJ.jpg");
-    background-size: cover; */
 }
 .aboutPhoto{
     padding-top: 20px;
@@ -14,8 +11,6 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100%;
-    width: 45vw;
     height: 500px;
 }
 .aboutInfo{

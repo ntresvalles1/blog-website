@@ -10,17 +10,11 @@ export default function Contact() {
             <label>Username: </label>
             <input type="text" className= "contactInput" placeholder="Enter username" ></input>
 
-            <label>Password: </label>
+            <label>Concern: </label>
             <input type="password" className= "contactInput" placeholder="Enter password" ></input>
             
-            <button className="contactButton" type="submit" >Sign-in</button>
-            
-            {/* <button className="Button">
-                <Link to="/signup" style={{textDecoration: "none", color:"inherit"}}>Create Account</Link>
-            </button> */}
-
+            <button className="contactButton" type="submit" >Send Email</button>
         </form>
-    
     </div>
     )
 };

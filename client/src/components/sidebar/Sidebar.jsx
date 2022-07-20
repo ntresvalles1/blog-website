@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
+import seniors21 from './seniors21.jpeg';
 
 
 export default function Sidebar() {
@@ -21,13 +22,13 @@ export default function Sidebar() {
         <div className="sidebarItem">
             <span className="sidebarTitle">SPOTLIGHT</span>
             <img 
-                //className="sideBarImage" 
-                src="https://image.shutterstock.com/image-illustration/cute-little-blue-bird-tweet-260nw-107219297.jpg"
+                className="sideBarImage" 
+                src={seniors21}
                 alt=" "
             />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Hic aperiam et obcaecati repellat magni nobis eos incidunt. 
+            <p className="sideBarDesc">
+                Congratulations to all our SDSCC seniors!! We're so proud of all of you 
+                and can't wait to see where the future takes you.
             </p>
         </div>
         

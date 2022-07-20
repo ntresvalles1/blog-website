@@ -2,16 +2,22 @@
     flex: 3;
     margin: 20px;
     padding-bottom: 30px;
-    background-color: rgb(240, 249, 249);
+    background-color: #faf0e6;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .sideBarImage{
-    width: 100%;
-    height: 200px;
+    /* width: 100%; */
+    height: 400px;
+}
+.sideBarDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Varela', sans-serif;
+    text-align: center;
 }
 .sidebarItem{
     display: flex;

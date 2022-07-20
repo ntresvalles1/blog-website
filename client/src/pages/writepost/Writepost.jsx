@@ -6,6 +6,7 @@ import "./writepost.css"
 
 export default function Writepost() {
     const [title, setTitle] = useState("")
+    const [category, setCategory] = useState("")
     const [description, setDescription] = useState("")
     const [file, setFile] = useState(null)
     const {user} = useContext(Context);
@@ -15,7 +16,8 @@ export default function Writepost() {
         const newPost = {
             username:user.username,
             title, 
-            description
+            description,
+            category
         };
         if(file){
             const data = new FormData();
@@ -59,6 +61,10 @@ export default function Writepost() {
                         className="writeInput" 
                         autoFocus={true} 
                         onChange={(e)=>setTitle(e.target.value)}/>
+                <input type="text" placeholder="Category" 
+                        className="writeInput" 
+                        autoFocus={true} 
+                        onChange={(e)=>setCategory(e.target.value)}/>
             </div>
             <div className="writeformgroup">
                 <textarea 

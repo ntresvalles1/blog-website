@@ -15,6 +15,7 @@ export default function SinglePost() {
     const {user} = useContext(Context);
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
+    const [category, setCategory] = useState("")
     const [updatePage, setUpdatePage] = useState(false)
 
 
@@ -40,7 +41,7 @@ export default function SinglePost() {
     const handleUpdate = async() => {
         try{
             await axios.put(`/posts/${post._id}`,{
-               username:user.username, title, description, });
+               username:user.username, title, description, category, });
             window.location.reload("/");
        }catch(err){
        }
@@ -82,6 +83,13 @@ export default function SinglePost() {
                 {/* makes user to link --> leads to only user's posts */}
                 <span className="Date">Author: <b>{new Date(post.createdAt).toDateString()}</b></span>
             </div>
+            {updatePage ? <textarea 
+                    className="singlePostCategoryInput" 
+                    value={category} 
+                    placeholder= "Enter Category"
+                    onChange={(e)=> setCategory(e.target.value)}/> : (
+                <p className="singlePostCategory">{category}</p>
+            )}
             {updatePage ? <textarea 
                     className="singlePostDescriptionInput" 
                     value={description} 

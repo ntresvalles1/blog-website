@@ -5,12 +5,12 @@ export default function Header() {
   return (
     <div className="header">
         <div className="headerTitle">
-            <span className="headerTitleSmall"> React & Node </span>
-            <span className="headerTitleLar">Blog</span>
+            <span className="headerTitleSmall"> Smithies in SDS </span>
+            <span className="headerTitleLar"> Coalition of Color</span>
         </div>
         <img 
             className="headerImage" 
-            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+            src="https://wallpaperaccess.com/full/2335246.png"
             alt=" "
             />
     </div>

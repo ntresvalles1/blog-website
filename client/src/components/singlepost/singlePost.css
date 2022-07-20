@@ -72,6 +72,12 @@
 .singlePostDescriptionInput:focus{
     outline: none;
 }
+.singlePostCategoryInput{
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
 
 .singlePostButton{
     width: 150px;
