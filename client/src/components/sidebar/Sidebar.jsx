@@ -40,20 +40,24 @@ export default function Sidebar() {
                         <li className="sidelistItem">{c.name}</li>
                     </Link> 
                 ))}
-                {/* <li className="sidelistItem">Trips</li>
-                <li className="sidelistItem">Favorites</li>
-                <li className="sidelistItem">Life</li>
-                <li className="sidelistItem">Music</li> */}
             </ul>
         </div>
        
         <div className="sidebarItem">
             <span className="sidebarTitle">FOLLOW US</span>
             <div className="sidebarSocial">
-                <i className="sideIcon fa-brands fa-instagram"></i>
-                <i className="sideIcon fa-brands fa-facebook"></i>         
-                <i className="sideIcon fa-brands fa-twitter"></i>
-                <i className="sideIcon fa-brands fa-pinterest"></i>
+                <a href="https://www.instagram.com/sdsccsmith/">
+                    <i className="topIcon fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/sdscc.smith">
+                    <i className="topIcon fa-brands fa-facebook"></i>  
+                </a>       
+                <a href="https://app.slack.com/client/T011W6JNT3J">
+                    <i className="topIcon fa-brands fa-slack"></i>
+                </a>
+                <a href="https://dashboard.mailerlite.com/forms/67682/57194423704881009/share">
+                    <i className="topIcon fa-solid fa-envelope"></i>
+                </a>
             </div>
         </div>
 

@@ -17,6 +17,8 @@ export default function SinglePost() {
     const [description, setDescription] = useState("")
     const [category, setCategory] = useState("")
     const [updatePage, setUpdatePage] = useState(false)
+    const [image, setImage] = useState("")
+
 
 
     useEffect(() => {
@@ -54,8 +56,8 @@ export default function SinglePost() {
                 <img src={PF + post.image} 
                 alt="" 
                 className="singlePostImage" />
-            )}{
-                updatePage ? <input 
+            )}
+                { updatePage ? <input 
                         type = "text" 
                         value = {title} 
                         className="singlePostTitleInput" 
@@ -77,11 +79,11 @@ export default function SinglePost() {
             <div className="singlePostInf">
                 <span className="singlePostAuthor">Author: 
                     <Link to={`/?user=${post.username}`} style={{textDecoration: "none", color:"inherit"}}>
-                        <b>{post.username}</b>
+                        <b> {post.username}</b>
                     </Link> 
                 </span>
                 {/* makes user to link --> leads to only user's posts */}
-                <span className="Date">Author: <b>{new Date(post.createdAt).toDateString()}</b></span>
+                <span className="Date">Date: <b>{new Date(post.createdAt).toDateString()}</b></span>
             </div>
             {updatePage ? <textarea 
                     className="singlePostCategoryInput" 

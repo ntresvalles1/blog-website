@@ -42,7 +42,7 @@ export default function Navbar() {
                     <Link to="/Contact" style={{textDecoration: "none", color:"inherit"}}>CONTACT</Link>
                 </li>
                 <li className="toplistitem" onClick={handleLogout}>
-                    {user && "LOG-OUT"}
+                    <Link to="/" style={{textDecoration: "none", color:"inherit"}}>{user && "LOG-OUT"}</Link>
                 </li>
             </ul>
         </div>
