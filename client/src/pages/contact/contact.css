@@ -11,12 +11,20 @@
 .contactTitle{
     font-size: 50px;
     font-family: 'Varela', sans-serif;
+    margin-bottom: 10px;
+}
+.contactSmTxt{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Varela', sans-serif;
 }
 .contactForm{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     font-family: 'Varela', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 .contactForm > label{
     margin-top: 10px;
@@ -24,16 +32,24 @@
     margin-left: 0px;
     margin-right: 0px;
 }
-.contactInput{
+.contactUserInput{
     padding: 10px;
     background-color: white;
     border: none;
     width: 100%;
     font-family: 'Varela', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+}
+.contactDescInput{
+    padding: 50px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: 'Varela', sans-serif;
+    font-size: 15px;
 }
 .contactButton{
-    padding: 10px;
+    padding: 13px;
     margin-top: 20px;
     border-radius: 10px;
     cursor: pointer;
