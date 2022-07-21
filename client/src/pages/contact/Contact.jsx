@@ -8,7 +8,7 @@ export default function Contact() {
             <span className="contactTitle">Contact Us</span>
             <span className='contactSmTxt'> We value everyone's opinions and want to make SDSCC members' experience the best it can be. </span>
             <span className='contactSmTxt'> So, if you have any concerns, ideas, or questions, please fill out the form below! 
-                This form is anonymous. </span>
+                 </span>
         <form className="contactForm" >
             <label>Username: </label>
             <input type="text" className= "contactUserInput" placeholder="Enter username" ></input>
